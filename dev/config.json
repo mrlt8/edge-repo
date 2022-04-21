@@ -12,7 +12,7 @@
     ],
     "startup": "application",
     "boot": "auto",
-    "apparmor": true,
+    "apparmor": false,
     "ports": {
         "1935/tcp": 1935,
         "8554/tcp": 8554,
@@ -24,10 +24,13 @@
         "8888/tcp": "HLS streams"
     },
     "environment": {
-        "HASS": "true"
+        "HASS": "true",
+        "IMG_DIR": "config/www",
+        "RECORD_PATH": "media/wyze/{CAM_NAME}"
     },
     "map": [
-        "config:rw"
+        "config:rw",
+        "media:rw"
     ],
     "services": [
         "mqtt:want"
@@ -43,7 +46,11 @@
         "WYZE_EMAIL": "email",
         "WYZE_PASSWORD": "password",
         "NET_MODE": "list(LAN|P2P|ANY)",
-        "SNAPSHOT": "list(API|RTSP|Disable)",
+        "SNAPSHOT": "list(API|RTSP|RTSP5|RTSP15|RTSP30|RTSP60|Disable)?",
+        "IMG_DIR": "str?",
+        "RECORD_ALL": "bool?",
+        "RECORD_LENGTH": "int?",
+        "RECORD_PATH": "str?",
         "MQTT_HOST": "str?",
         "MQTT_AUTH": "str?",
         "MQTT_TOPIC": "str?",
@@ -63,6 +70,12 @@
         "DEBUG_FFMPEG": "bool?",
         "RTSP_RTSPDISABLE": "list(yes|no)?",
         "RTSP_RTMPDISABLE": "list(yes|no)?",
-        "RTSP_HLSDISABLE": "list(yes|no)?"
+        "RTSP_HLSDISABLE": "list(yes|no)?",
+        "RTSP_READTIMEOUT": "list(5s|10s|15s|20s|25s|30s)?",
+        "DOOR_SIZE": "int?",
+        "IGNORE_RES": "int?",
+        "KEEP_BAD_FRAMES": "bool?",
+        "FPS_FIX": "bool?",
+        "WEBRTC": "bool?"
     }
 }
