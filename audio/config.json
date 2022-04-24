@@ -1,10 +1,10 @@
 {
-    "name": "Docker Wyze Bridge (DEV branch)",
+    "name": "Docker Wyze Bridge (Audio branch)",
     "description": "RTMP/RTSP/HLS bridge for Wyze cams in a docker container",
-    "slug": "docker-wyze-bridge-dev",
+    "slug": "docker-wyze-bridge-audio",
     "url": "http://github.com/mrlt8/docker-wyze-bridge",
     "image": "mrlt8/wyze-bridge",
-    "version": "dev",
+    "version": "audio",
     "arch": [
         "armv7",
         "aarch64",
@@ -26,6 +26,7 @@
     "environment": {
         "HASS": "true",
         "IMG_DIR": "config/www",
+        "SKIP_RTSP_LOG": true,
         "RECORD_PATH": "media/wyze/{CAM_NAME}"
     },
     "map": [
