@@ -41,7 +41,6 @@
         "WYZE_PASSWORD": null,
         "NET_MODE": "ANY",
         "SNAPSHOT": "API",
-        "IMG_TYPE": "jpg",
         "MQTT_DTOPIC": "homeassistant"
     },
     "schema": {
@@ -49,7 +48,7 @@
         "WYZE_PASSWORD": "password",
         "NET_MODE": "list(LAN|P2P|ANY)",
         "SNAPSHOT": "list(API|RTSP|RTSP5|RTSP15|RTSP30|RTSP60|Disable)?",
-        "IMG_TYPE": "list(jpg|png)",
+        "IMG_TYPE": "list(jpg|png)?",
         "IMG_DIR": "str?",
         "RECORD_ALL": "bool?",
         "RECORD_LENGTH": "int?",
