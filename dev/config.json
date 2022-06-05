@@ -42,7 +42,8 @@
         "NET_MODE": "ANY",
         "SNAPSHOT": "API",
         "MQTT_DTOPIC": "homeassistant",
-        "ENABLE_AUDIO": false
+        "ENABLE_AUDIO": false,
+        "CAM_OPTIONS": []
     },
     "schema": {
         "WYZE_EMAIL": "email",
@@ -67,6 +68,7 @@
         "FILTER_BLOCK": "bool?",
         "ROTATE_DOOR": "bool?",
         "IGNORE_OFFLINE": "bool?",
+        "OFFLINE_IFTTT": "str?",
         "FRESH_DATA": "bool?",
         "URI_SEPARATOR": "list(-|_|#)?",
         "QUALITY": "str?",
@@ -81,6 +83,13 @@
         "IGNORE_RES": "int?",
         "KEEP_BAD_FRAMES": "bool?",
         "FPS_FIX": "bool?",
-        "WEBRTC": "bool?"
+        "WEBRTC": "bool?",
+        "CAM_OPTIONS": {
+            "CAM_NAME": "str?",
+            "AUDIO": "bool?",
+            "FFMPEG": "str?",
+            "ROTATE": "bool?",
+            "QUALITY": "str?"
+        }
     }
 }
