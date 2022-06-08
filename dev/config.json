@@ -76,10 +76,6 @@
         "FFMPEG_CMD": "str?",
         "DEBUG_FRAMES": "bool?",
         "DEBUG_FFMPEG": "bool?",
-        "RTSP_RTSPDISABLE": "list(yes|no)?",
-        "RTSP_RTMPDISABLE": "list(yes|no)?",
-        "RTSP_HLSDISABLE": "list(yes|no)?",
-        "RTSP_READTIMEOUT": "list(5s|10s|15s|20s|25s|30s)?",
         "IGNORE_RES": "int?",
         "KEEP_BAD_FRAMES": "bool?",
         "FPS_FIX": "bool?",
@@ -92,6 +88,9 @@
                 "ROTATE": "bool?",
                 "QUALITY": "str?"
             }
+        ],
+        "RTSP_SIMPLE_SERVER": [
+            "match(^\\w+=.*)?"
         ]
     }
 }

@@ -1,0 +1,12 @@
+configuration:
+  NET_MODE:
+    name: Allowed net modes
+  SNAPSHOT:
+    name: Snapshot mode to use
+  CAM_OPTIONS:
+    name: Camera Specific Options
+  WEBRTC:
+    name: Print the webrtc credential for each camera.
+  RTSP_SIMPLE_SERVER:
+    name: rtsp-simple-server config
+    description: Use `=` to specify the value and use `_` in place of spaces e.g. 
