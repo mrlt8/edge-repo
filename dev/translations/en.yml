@@ -20,6 +20,7 @@ configuration:
   CAM_OPTIONS:
     name: Camera Specific Options
   FRESH_DATA:
+    name: Pull fresh data
     description: Ignore local cache and pull fresh data from the wyze API.  
   WEBRTC:
     name: Print the webrtc credential.
