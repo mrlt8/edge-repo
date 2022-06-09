@@ -1,0 +1,29 @@
+configuration:
+  NET_MODE:
+    name: Allowed net modes
+  SNAPSHOT:
+    name: Snapshot mode to use
+  ENABLE_AUDIO:
+    name: Enable audio for all cameras
+  AUDIO_CODEC:
+    name: Audio Codec
+    description: Cams with PCM audio will be re-encoded to AAC by default for RTSP compatibility.
+  AUDIO_FILTER:
+    name: ffmpeg audio filter
+    description: Requires audio codec to be set to AAC or MP3.
+  OFFLINE_IFTTT:
+    name: IFTTT webhook
+    description: e.g. `EventName:Webhooks_Key`
+  ROTATE_DOOR:
+    name: Rotate Doorbells
+    description: Will rotate video 90 degrees clockwise.
+  CAM_OPTIONS:
+    name: Camera Specific Options
+  FRESH_DATA:
+    name: Pull fresh data
+    description: Ignore local cache and pull fresh data from the wyze API.  
+  WEBRTC:
+    name: Print the webrtc credential.
+  RTSP_SIMPLE_SERVER:
+    name: rtsp-simple-server config
+    description: Use `=` to specify the value and use `_` in place of spaces.
