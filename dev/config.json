@@ -36,6 +36,8 @@
     "services": [
         "mqtt:want"
     ],
+    "ingress": true,
+    "ingress_port": 5000,
     "options": {
         "WYZE_EMAIL": null,
         "WYZE_PASSWORD": null,
@@ -55,6 +57,7 @@
         "ENABLE_AUDIO": "bool?",
         "AUDIO_CODEC": "list(COPY|AAC|MP3)?",
         "AUDIO_FILTER": "str?",
+        "LLHLS": "bool?",
         "RECORD_ALL": "bool?",
         "RECORD_LENGTH": "int?",
         "RECORD_PATH": "str?",
@@ -76,6 +79,7 @@
         "FFMPEG_CMD": "str?",
         "DEBUG_FRAMES": "bool?",
         "DEBUG_FFMPEG": "bool?",
+        "IGNORE_RES": "int?",
         "KEEP_BAD_FRAMES": "bool?",
         "FPS_FIX": "bool?",
         "WEBRTC": "bool?",
@@ -84,8 +88,11 @@
                 "CAM_NAME": "str?",
                 "AUDIO": "bool?",
                 "FFMPEG": "str?",
+                "LIVESTREAM": "str?",
+                "NET_MODE": "str?",
                 "ROTATE": "bool?",
-                "QUALITY": "str?"
+                "QUALITY": "str?",
+                "RECORD": "bool?"
             }
         ],
         "RTSP_SIMPLE_SERVER": [

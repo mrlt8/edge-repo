@@ -36,13 +36,16 @@
     "services": [
         "mqtt:want"
     ],
+    "ingress": true,
+    "ingress_port": 5000,
     "options": {
         "WYZE_EMAIL": null,
         "WYZE_PASSWORD": null,
         "NET_MODE": "ANY",
         "SNAPSHOT": "API",
         "MQTT_DTOPIC": "homeassistant",
-        "ENABLE_AUDIO": false
+        "ENABLE_AUDIO": false,
+        "CAM_OPTIONS": []
     },
     "schema": {
         "WYZE_EMAIL": "email",
@@ -54,6 +57,7 @@
         "ENABLE_AUDIO": "bool?",
         "AUDIO_CODEC": "list(COPY|AAC|MP3)?",
         "AUDIO_FILTER": "str?",
+        "LLHLS": "bool?",
         "RECORD_ALL": "bool?",
         "RECORD_LENGTH": "int?",
         "RECORD_PATH": "str?",
@@ -67,6 +71,7 @@
         "FILTER_BLOCK": "bool?",
         "ROTATE_DOOR": "bool?",
         "IGNORE_OFFLINE": "bool?",
+        "OFFLINE_IFTTT": "match(^\\w+:\\w+)?",
         "FRESH_DATA": "bool?",
         "URI_SEPARATOR": "list(-|_|#)?",
         "QUALITY": "str?",
@@ -74,13 +79,24 @@
         "FFMPEG_CMD": "str?",
         "DEBUG_FRAMES": "bool?",
         "DEBUG_FFMPEG": "bool?",
-        "RTSP_RTSPDISABLE": "list(yes|no)?",
-        "RTSP_RTMPDISABLE": "list(yes|no)?",
-        "RTSP_HLSDISABLE": "list(yes|no)?",
-        "RTSP_READTIMEOUT": "list(5s|10s|15s|20s|25s|30s)?",
         "IGNORE_RES": "int?",
         "KEEP_BAD_FRAMES": "bool?",
         "FPS_FIX": "bool?",
-        "WEBRTC": "bool?"
+        "WEBRTC": "bool?",
+        "CAM_OPTIONS": [
+            {
+                "CAM_NAME": "str?",
+                "AUDIO": "bool?",
+                "FFMPEG": "str?",
+                "LIVESTREAM": "str?",
+                "NET_MODE": "str?",
+                "ROTATE": "bool?",
+                "QUALITY": "str?",
+                "RECORD": "bool?"
+            }
+        ],
+        "RTSP_SIMPLE_SERVER": [
+            "match(^\\w+=.*)?"
+        ]
     }
 }
