@@ -16,12 +16,14 @@
     "ports": {
         "1935/tcp": 1935,
         "8554/tcp": 8554,
-        "8888/tcp": 8888
+        "8888/tcp": 8888,
+        "5000/tcp": 5000
     },
     "ports_description": {
         "1935/tcp": "RTMP streams",
         "8554/tcp": "RTSP streams",
-        "8888/tcp": "HLS streams"
+        "8888/tcp": "HLS streams",
+        "5000/tcp": "Web-UI/Snapshots"
     },
     "environment": {
         "HASS": "true",
@@ -83,6 +85,14 @@
         "KEEP_BAD_FRAMES": "bool?",
         "FPS_FIX": "bool?",
         "WEBRTC": "bool?",
+        "WB_SHOW_VIDEO":"bool?",
+        "ENABLE_BOA":"bool?",
+        "BOA_INTERVAL":"int?",
+        "TAKE_PHOTO":"bool?",
+        "PULL_PHOTO":"bool?",
+        "PULL_ALARM":"bool?",
+        "MOTION_COOLDOWN":"int?",
+        "MOTION_HTTP":"str?",
         "CAM_OPTIONS": [
             {
                 "CAM_NAME": "str?",
