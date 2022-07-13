@@ -110,6 +110,6 @@
         ],
         "WB_HLS_URL":"str?",
         "WB_RTMP_URL":"str?",
-        "WB_RTSP_URL":"str?",
+        "WB_RTSP_URL":"str?"
     }
 }
