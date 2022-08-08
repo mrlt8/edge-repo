@@ -47,6 +47,7 @@
         "SNAPSHOT": "API",
         "MQTT_DTOPIC": "homeassistant",
         "ENABLE_AUDIO": false,
+        "ON_DEMAND": false,
         "CAM_OPTIONS": []
     },
     "schema": {
@@ -56,6 +57,7 @@
         "SNAPSHOT": "list(API|RTSP|RTSP5|RTSP15|RTSP30|RTSP60|Disable)?",
         "IMG_TYPE": "list(jpg|png)?",
         "IMG_DIR": "str?",
+        "ON_DEMAND": "bool?",
         "ENABLE_AUDIO": "bool?",
         "AUDIO_CODEC": "list(COPY|AAC|MP3)?",
         "AUDIO_FILTER": "str?",
@@ -85,14 +87,14 @@
         "KEEP_BAD_FRAMES": "bool?",
         "FPS_FIX": "bool?",
         "WEBRTC": "bool?",
-        "WB_SHOW_VIDEO":"bool?",
-        "ENABLE_BOA":"bool?",
-        "BOA_INTERVAL":"int?",
-        "TAKE_PHOTO":"bool?",
-        "PULL_PHOTO":"bool?",
-        "PULL_ALARM":"bool?",
-        "MOTION_COOLDOWN":"int?",
-        "MOTION_HTTP":"str?",
+        "WB_SHOW_VIDEO": "bool?",
+        "ENABLE_BOA": "bool?",
+        "BOA_INTERVAL": "int?",
+        "TAKE_PHOTO": "bool?",
+        "PULL_PHOTO": "bool?",
+        "PULL_ALARM": "bool?",
+        "MOTION_HTTP": "str?",
+        "MOTION_COOLDOWN": "int?",
         "CAM_OPTIONS": [
             {
                 "CAM_NAME": "str?",
@@ -108,8 +110,8 @@
         "RTSP_SIMPLE_SERVER": [
             "match(^\\w+=.*)?"
         ],
-        "WB_HLS_URL":"str?",
-        "WB_RTMP_URL":"str?",
-        "WB_RTSP_URL":"str?"
+        "WB_HLS_URL": "str?",
+        "WB_RTMP_URL": "str?",
+        "WB_RTSP_URL": "str?"
     }
 }
