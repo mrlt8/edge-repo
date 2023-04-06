@@ -44,6 +44,7 @@
     ],
     "ingress": true,
     "ingress_port": 5000,
+    "panel_icon": "mdi:bridge",
     "options": {
         "WYZE_EMAIL": null,
         "WYZE_PASSWORD": null,
@@ -115,7 +116,7 @@
                 "SUBSTREAM": "bool?"
             }
         ],
-        "RTSP_SIMPLE_SERVER": [
+        "MEDIAMTX": [
             "match(^\\w+=.*)?"
         ],
         "WB_HLS_URL": "str?",
