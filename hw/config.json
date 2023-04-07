@@ -1,10 +1,10 @@
 {
-    "name": "Docker Wyze Bridge (nightly branch)",
+    "name": "Docker Wyze Bridge (HW branch)",
     "description": "RTMP/RTSP/HLS bridge for Wyze cams in a docker container",
-    "slug": "docker-wyze-bridge-nightly",
-    "url": "http://github.com/mrlt8/docker-wyze-bridge",
+    "slug": "docker-wyze-bridge-hw",
+    "url": "https://github.com/mrlt8/docker-wyze-bridge",
     "image": "mrlt8/wyze-bridge",
-    "version": "nightly",
+    "version": "latest-hw",
     "arch": [
         "armv7",
         "aarch64",
@@ -38,6 +38,9 @@
         "config:rw",
         "media:rw",
         "ssl:ro"
+    ],
+    "devices": [
+        "/dev/"
     ],
     "services": [
         "mqtt:want"
