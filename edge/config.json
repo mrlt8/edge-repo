@@ -19,6 +19,7 @@
         "8554/tcp": 8554,
         "8888/tcp": 8888,
         "8189/udp": 8189,
+        "8189/tcp": 8189,
         "8889/tcp": 8889,
         "5000/tcp": 5000
     },
@@ -31,8 +32,9 @@
         "5000/tcp": "Web-UI/Snapshots"
     },
     "environment": {
-        "IMG_DIR": "config/www",
-        "RECORD_PATH": "media/wyze/{CAM_NAME}"
+        "IMG_DIR": "media/wyze/img/",
+        "RECORD_PATH": "media/wyze/{CAM_NAME}",
+        "MTX_WEBRTCICETCPMUXADDRESS": ":8189"
     },
     "map": [
         "config:rw",
@@ -62,6 +64,7 @@
         "TOTP_KEY": "str?",
         "NET_MODE": "list(LAN|P2P|ANY)",
         "SNAPSHOT": "list(API|RTSP|RTSP15|RTSP30|RTSP60|RTSP180|RTSP300|Disable)?",
+        "SNAPSHOT_FORMAT": "str?",
         "IMG_TYPE": "list(jpg|png)?",
         "IMG_DIR": "str?",
         "ENABLE_AUDIO": "bool?",
@@ -90,6 +93,7 @@
         "FRESH_DATA": "bool?",
         "URI_SEPARATOR": "list(-|_|#)?",
         "QUALITY": "str?",
+        "SUB_QUALITY": "str?",
         "FFMPEG_FLAGS": "str?",
         "FFMPEG_CMD": "str?",
         "DEBUG_LEVEL": "list(INFO|DEBUG)?",
