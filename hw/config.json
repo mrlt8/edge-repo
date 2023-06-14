@@ -39,9 +39,6 @@
         "media:rw",
         "ssl:ro"
     ],
-    "devices": [
-        "/dev/"
-    ],
     "services": [
         "mqtt:want"
     ],
@@ -55,12 +52,15 @@
         "SNAPSHOT": "Disable",
         "MQTT_DTOPIC": "homeassistant",
         "ENABLE_AUDIO": false,
+        "ON_DEMAND": true,
         "SUBSTREAM": false,
         "CAM_OPTIONS": []
     },
     "schema": {
         "WYZE_EMAIL": "email",
         "WYZE_PASSWORD": "password",
+        "API_KEY": "str?",
+        "API_ID": "str?",
         "WB_IP": "str?",
         "TOTP_KEY": "str?",
         "NET_MODE": "list(LAN|P2P|ANY)",
@@ -68,6 +68,7 @@
         "SNAPSHOT_FORMAT": "str?",
         "IMG_TYPE": "list(jpg|png)?",
         "IMG_DIR": "str?",
+        "ON_DEMAND": "bool?",
         "ENABLE_AUDIO": "bool?",
         "SUBSTREAM": "bool?",
         "AUDIO_CODEC": "list(COPY|AAC|MP3|LIBOPUS)?",
@@ -78,6 +79,7 @@
         "RECORD_ALL": "bool?",
         "RECORD_LENGTH": "int?",
         "RECORD_PATH": "str?",
+        "RECORD_FILE_NAME": "str?",
         "MQTT_HOST": "str?",
         "MQTT_AUTH": "str?",
         "MQTT_TOPIC": "str?",
@@ -92,13 +94,15 @@
         "IGNORE_OFFLINE": "bool?",
         "OFFLINE_IFTTT": "match(^\\w+:\\w+)?",
         "FRESH_DATA": "bool?",
+        "URI_MAC": "bool?",
         "URI_SEPARATOR": "list(-|_|#)?",
         "QUALITY": "str?",
         "SUB_QUALITY": "str?",
         "FFMPEG_FLAGS": "str?",
         "FFMPEG_CMD": "str?",
-        "DEBUG_LEVEL": "list(INFO|DEBUG)?",
+        "LOG_LEVEL": "list(INFO|DEBUG)?",
         "LOG_FILE": "bool?",
+        "LOG_TIME": "bool?",
         "DEBUG_FFMPEG": "bool?",
         "IGNORE_RES": "int?",
         "BOA_ENABLED": "bool?",
@@ -117,6 +121,7 @@
                 "NET_MODE": "str?",
                 "ROTATE": "bool?",
                 "QUALITY": "str?",
+                "SUB_QUALITY": "bool?",
                 "RECORD": "bool?",
                 "SUBSTREAM": "bool?"
             }
