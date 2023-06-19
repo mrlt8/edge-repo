@@ -1,10 +1,10 @@
 {
-    "name": "Docker Wyze Bridge (Edge builds)",
-    "description": "Edge build",
+    "name": "Docker Wyze Bridge (host_network builds)",
+    "description": "host_network build",
     "slug": "docker-wyze-bridge-edge",
     "url": "http://github.com/mrlt8/docker-wyze-bridge",
     "image": "mrlt8/wyze-bridge",
-    "version": "edge",
+    "version": "latest",
     "arch": [
         "armv7",
         "aarch64",
