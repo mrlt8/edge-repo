@@ -1,7 +1,7 @@
 {
     "name": "Docker Wyze Bridge (host_network builds)",
     "description": "host_network build",
-    "slug": "docker-wyze-bridge-edge",
+    "slug": "docker-wyze-bridge-host",
     "url": "http://github.com/mrlt8/docker-wyze-bridge",
     "image": "mrlt8/wyze-bridge",
     "version": "latest",
