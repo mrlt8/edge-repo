@@ -36,8 +36,8 @@
   "ingress_port": 5000,
   "panel_icon": "mdi:bridge",
   "options": {
-    "WYZE_EMAIL": null,
-    "WYZE_PASSWORD": null,
+    "WYZE_EMAIL": "",
+    "WYZE_PASSWORD": "",
     "NET_MODE": "ANY",
     "SNAPSHOT": "Disable",
     "MQTT_DTOPIC": "homeassistant",
