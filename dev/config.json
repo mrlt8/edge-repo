@@ -62,6 +62,8 @@
     "IMG_DIR": "str?",
     "ON_DEMAND": "bool?",
     "ENABLE_AUDIO": "bool?",
+    "MOTION_API": "bool?",
+    "MOTION_INT": "float(1.1,)?",
     "SUBSTREAM": "bool?",
     "AUDIO_CODEC": "list(COPY|AAC|MP3|LIBOPUS)?",
     "AUDIO_FILTER": "str?",
@@ -96,7 +98,7 @@
     "LOG_LEVEL": "list(INFO|DEBUG)?",
     "LOG_FILE": "bool?",
     "LOG_TIME": "bool?",
-    "DEBUG_FFMPEG": "bool?",
+    "FFMPEG_LOGLEVEL": "list(quiet|panic|fatal|error|warning|info|verbose|debug)?",
     "IGNORE_RES": "int?",
     "BOA_ENABLED": "bool?",
     "BOA_INTERVAL": "int?",
@@ -117,7 +119,8 @@
         "SUB_QUALITY": "str?",
         "RECORD": "bool?",
         "SUB_RECORD": "bool?",
-        "SUBSTREAM": "bool?"
+        "SUBSTREAM": "bool?",
+        "MOTION_WEBHOOK": "str?"
       }
     ],
     "MEDIAMTX": ["match(^\\w+=.*)?"],
