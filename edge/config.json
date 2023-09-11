@@ -1,7 +1,7 @@
 {
   "name": "Docker Wyze Bridge (Edge builds)",
   "description": "Edge build. Use the REBUILD button to pull latest image.",
-  "slug": "docker-wyze-bridge-edge",
+  "slug": "docker_wyze_bridge_edge",
   "url": "http://github.com/mrlt8/docker-wyze-bridge",
   "version": "edge",
   "arch": ["armv7", "aarch64", "amd64"],

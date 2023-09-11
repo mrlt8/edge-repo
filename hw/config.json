@@ -1,7 +1,7 @@
 {
   "name": "Docker Wyze Bridge (HW branch)",
   "description": "HW build. Use the REBUILD button to pull latest image.",
-  "slug": "docker-wyze-bridge-hw",
+  "slug": "docker_wyze_bridge_hw",
   "url": "https://github.com/mrlt8/docker-wyze-bridge",
   "version": "latest-hw",
   "arch": ["armv7", "aarch64", "amd64"],
